@@ -8,5 +8,7 @@ def load_operations():
     '''
     with open('operations.json', 'r', encoding= 'utf-8') as file:
         operations = json.load(file)
-        return operations
-print(load_operations())
+        return operationsp
+
+print()
+
