@@ -15,10 +15,9 @@ def ex_operations(x):
     Выбирает из списка пройденные операции и формирует новый список
     :return:
     '''
+    w = []
     for i in x:
-        for o in i:
-            if o['state'] == 'EXECUTED' and i[2]['from'] is True:
-                print(i)
+            if 'state'in i and i['state'] == 'EXECUTED' and "from" in i:
+                w.append(i)
+    return w
 
-kol = load_operations()
-ex_operations(kol)
