@@ -21,7 +21,7 @@ def ex_operations(x):
                 work_list.append(i)
     return work_list
 
-def last_values(data, how_much):
+def last_values(data, how_much=None):
     '''
     Фуц-ия для сортировки списка по дате и получения последих how_much значений
 
@@ -67,5 +67,3 @@ def edited_data(x):
 
     return finished_data
 
-#kol = edited_data(last_values(ex_operations(load_operations()), 5))
-#edited_data(kol)

@@ -151,4 +151,112 @@ def list_2():
     "description": "Перевод организации",
     "from": "MasterCard 7158300734726758",
     "to": "Счет 35383033474447895560"
+  },
+  {
+    "id": 285353808,
+    "state": "EXECUTED",
+    "date": "2018-08-06T16:22:54.643491",
+    "operationAmount": {
+      "amount": "82946.19",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Открытие вклада",
+    "to": "Счет 12189246980267075758"
+  },
+  {
+    "id": 556488059,
+    "state": "CANCELED",
+    "date": "2019-05-17T01:50:00.166954",
+    "operationAmount": {
+      "amount": "74604.56",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "МИР 8021883699486544",
+    "to": "Visa Gold 8702717057933248"
   }]
+
+@pytest.fixture
+def list_3():
+    return [{
+    "id": 441945886,
+    "state": "EXECUTED",
+    "date": "2019-08-26T10:50:58.294041",
+    "operationAmount": {
+      "amount": "31957.58",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Maestro 1596837868705199",
+    "to": "Счет 64686473678894779589"
+  },
+  {
+    "id": 41428829,
+    "state": "EXECUTED",
+    "date": "2021-07-03T18:35:29.512364",
+    "operationAmount": {
+      "amount": "8221.37",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "MasterCard 7158300734726758",
+    "to": "Счет 35383033474447895560"
+  },
+  {
+    "id": 939719570,
+    "state": "EXECUTED",
+    "date": "2018-06-30T02:08:58.425572",
+    "operationAmount": {
+      "amount": "9824.07",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 75106830613657916952",
+    "to": "Счет 11776614605963066702"
+  },
+  {
+    "id": 142264268,
+    "state": "EXECUTED",
+    "date": "2019-04-04T23:20:05.206878",
+    "operationAmount": {
+      "amount": "79114.93",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод со счета на счет",
+    "from": "Счет 19708645243227258542",
+    "to": "Счет 75651667383060284188"
+  },
+  {
+    "id": 100392079,
+    "state": "EXECUTED",
+    "date": "2019-03-03T03:13:18.622393",
+    "operationAmount": {
+      "amount": "44493.45",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "Visa Classic 6319351940209800",
+    "to": "Счет 14073196441261107791"
+  }
+  ]
