@@ -18,3 +18,4 @@ def test_last_values(list_1, list_2):
 
 def test_edited_data(list_3):
     assert len(edited_data(list_3)) == 5
+    assert len(edited_data(list_3)) == 5
