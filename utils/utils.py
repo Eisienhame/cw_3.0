@@ -17,7 +17,7 @@ def ex_operations(x):
     '''
     work_list = []
     for i in x:
-            if 'state'in i and i['state'] == 'EXECUTED' and "from" in i:
+            if 'state' in i and i['state'] == 'EXECUTED' and "from" in i:
                 work_list.append(i)
     return work_list
 
@@ -32,8 +32,11 @@ def last_values(data, how_much):
 
 def edited_data(x):
     '''
-    Изменяем вх данные под необходимый формат
+    Изменяем вх данные под необходимый формат и заполяем форму на выход
+
     '''
+    finished_data = []
+
     for i in x:
         ed_date = datetime.strptime(i["date"], '%Y-%m-%dT%H:%M:%S.%f').strftime('%d.%m.%Y')
         ed_description = i["description"]
@@ -55,6 +58,14 @@ def edited_data(x):
 
         ed_to_name = ' '.join(to_data)
 
-        ed_amount_money = f'{i["amount"]} {i["name"]}'
-#kol = last_values(ex_operations(load_operations()), 5)
+
+        ed_amount_money = f'{i["operationAmount"]["amount"]} {i["operationAmount"]["currency"]["name"]}'
+
+        finished_data.append(f'''{ed_date} {ed_description}
+{ed_from_name} {ed_accont_number} -> {ed_to_name} {ed_to_number}
+{ed_amount_money}''')
+
+    return finished_data
+
+#kol = edited_data(last_values(ex_operations(load_operations()), 5))
 #edited_data(kol)
