@@ -11,11 +11,13 @@ def test_ex_operations(list_1):
     assert len(ex_operations(list_1)) == 4
 
 
-def test_last_values(list_1, list_2):
+def test_last_values(list_1, list_2, list_4):
     assert len(last_values(list_1, 2)) == 2
     assert len(last_values(list_2)) == 4
 
 
-def test_edited_data(list_3):
+
+def test_edited_data(list_3, list_4):
     assert len(edited_data(list_3)) == 5
-    assert len(edited_data(list_3)) == 5
+    assert len(edited_data(list_4)) == 76
+
